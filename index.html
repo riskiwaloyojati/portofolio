@@ -2,9 +2,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Riski Waloyojati</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <!-- Foto slide landing page -->
+    <div class="homepage"> 
+        <!-- welcome -->
+         <div class="homepage-text">
+            <h1 class="homepage-text-wellcome">Halo selamat datang di Website saya</h1>
+         </div>
+
+        <!-- dot / circle -->
+        <div class="dots">               
+            <div class="landingpage-dot">
+                <span class="landingpage-dot-position" onclick="currentSlide(1)"></span>
+                <span class="landingpage-dot-position" onclick="currentSlide(2)"></span>
+                <span class="landingpage-dot-position" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <!-- image slide -->
+        <div id="landingpage">
+            <div class="landingpage-slide fade">
+                <div class="landingpage-slide-number">1 / 3 </div>
+                <img src="assets/myfoto/riski2.JPG" alt="myfoto.jpg" class="img-slide">
+            </div>
+            <div class="landingpage-slide fade">
+                <div class="landingpage-slide-number">2 / 3 </div>
+                <img src="assets/myfoto/bromo.JPG" alt="myfoto.jpg" class="img-slide">
+            </div>
+            <div class="landingpage-slide fade">
+                <div class="landingpage-slide-number">3 / 3 </div>
+                <img src="assets/myfoto/bromo1.jpg" alt="myfoto.jpg" class="img-slide">
+            </div>
+    
+            <!-- next & previus button -->
+             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+             <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>   
+
+    <!-- navbar -->
+     <div class="nav">
+        <ul class="navbar">
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Contact</a></li> 
+        </ul>
+     </div>
+        
+     
+    
+     <!-- Aboutme -->
+    <div id="aboutme">
+        <br>
+        <div class="aboutme-title" id="aboutme-title">
+            <h1 class="aboutme-title-text">About Me</h1>
+        </div>
+        
+        <div class="aboutme-foto">
+            <img src="assets/myfoto/riski.JPG" alt="myfoto.jpg" class="aboutme-foto-img">
+        </div>
+        <div class="about-container-top">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis non, ipsam sunt delectus quam dignissimos est, minus sapiente necessitatibus sint qui deserunt veniam reiciendis laboriosam repellat velit ea architecto!                
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iste, veritatis minima assumenda quae veniam nihil dolor deserunt hic pariatur incidunt dolores harum soluta esse, debitis neque, necessitatibus praesentium quibusdam.
+                lla magnam assumenda laboriosam, uidem hic officiis perferendis deserunt, maiores sunt dicta dolore cumque. Ab repellendus asperiores ad sit, velit nulla quo quidem odio.
+            </p>
+        </div>
+        <div class="about-container-bot">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia iste, veritatis minima assumenda quae veniam nihil dolor deserunt hic pariatur incidunt dolores harum soluta esse, debitis neque, necessitatibus praesentium quibusdam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime repellat quibusdam similique, vitae dicta deserunt ullam, hic officiis corrupti minus numquam harum optio consequuntur vel, quam fugit natus voluptatibus veniam?
+                Voluptates accusamus cum nam magni in quae modi voluptas adipisci temporibus sunt, odit distinctio, deserunt delectus amet similique quis ipsum! Minima officiis cupiditate aspernatur quisquam neque libero vel, tenetur maxime!
+                erendis deserunt, maiores sunt dicta dolore cumque. Ab repellendus asperiores ad sit, velit nulla quo quidem odio.
+            </p>
+        </div>
+    </div>
+
+    <!-- Services -->
+     <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit numquam fugiat mollitia ipsa et non recusandae harum esse. At pariatur quis nisi facere ea quasi voluptatibus adipisci commodi quas?
+        </p>
+        <br><br><br><br><br> 
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit numquam fugiat mollitia ipsa et non recusandae harum esse. At pariatur quis nisi facere ea quasi voluptatibus adipisci commodi quas?
+        </p>
+        <br><br><br><br><br>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit numquam fugiat mollitia ipsa et non recusandae harum esse. At pariatur quis nisi facere ea quasi voluptatibus adipisci commodi quas?
+        </p>
+        <br><br><br><br><br>
+    
+     </div>
+ 
+    
+
+
+    <script src="script.js"></script>
 </body>
 </html>
