@@ -1,50 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-.container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-.content {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 20px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.photo {
-    width: 150px;
-    height: 150px;
-    background-color: #333;
-    border-radius: 50%;
-}
-
-.text-block {
-    background-color: #333;
-    height: 30px;
-}
-
-.name {
-    width: 200px;
-}
-
-.description {
-    grid-column: 1 / span 2;
-    height: 100px;
-}
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .photo, .text1 {
+    margin: 10px;
+  }
+  
+  .photo {
+    width: 100px; /* Atur lebar sesuai kebutuhan */
+    height: 100px; /* Atur tinggi sesuai kebutuhan */
+    background-color: #833636; /* Contoh warna latar belakang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text1, .text2 {
+    padding: 10px;
+    background-color: #5e050567; /* Contoh warna latar belakang */
+  }
+  
+  .text2 {
+    width: 100%; /* Membuat teks 2 selebar kontainer */
+    text-align: center;
+  }
+  
