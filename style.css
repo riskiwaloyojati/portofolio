@@ -112,7 +112,7 @@ ul.navbar {
     padding: 0;
     margin: 0;
     text-align: center;
-    background-color: black;
+    background-color: #ffffff;
     box-shadow: 3px 3px 4px rgba(187, 187, 187, 0.5)
 }
 .navbar > li {
@@ -125,12 +125,12 @@ ul.navbar {
     padding: 1.5em 2em;
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: #303030;
     transition: .5s;
 }
 
 .navbar > li > a:hover {
-    background-color: teal;
+    background-color: #b6b6b6;
 }
 
 /* About me */
@@ -165,34 +165,40 @@ ul.navbar {
 .aboutme-col1-img{
     max-width: 400px;
     border-radius: 200px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
 }
 .clear{
     clear: both;
 }
 
 /* Services */
+#services{
+    background-color: rgb(255, 255, 255);
+}
+
 .services-title-text{
+    background-color: #fff9f92a;
     text-align: center;
     padding-top: 100px;
     color: #414141;
 }
 
-section {
-    height: 100vh;
+.services-section {
+    height: auto;
     width: 100%;
     display: grid;
     place-items: center;
   }
-  .row {
+  .services-row {
     display: flex;
     flex-wrap: wrap;
   }
-  .column {
+  .services-column {
     width: 100%;
     padding: 0 1em 1em 1em;
     text-align: center;
   }
-  .card {
+  .services-card {
     width: 100%;
     height: 100%;
     padding: 2em 1.5em;
@@ -207,7 +213,7 @@ section {
   h3 {
     font-size: 20px;
     font-weight: 600;
-    color: #1f194c;
+    color: #414141;
     margin: 1em 0;
   }
   p {
@@ -216,7 +222,7 @@ section {
     line-height: 1.6;
     letter-spacing: 0.03em;
   }
-  .icon-wrapper {
+  .services-icon-wrapper {
     background-color: #575757;
     position: relative;
     margin: auto;
@@ -247,7 +253,7 @@ section {
     section {
       padding: 0 2em;
     }
-    .column {
+    .services-column {
       flex: 0 50%;
       max-width: 50%;
     }
@@ -256,8 +262,10 @@ section {
     section {
       padding: 1em 3em;
     }
-    .column {
+    .services-column {
       flex: 0 0 33.33%;
       max-width: 33.33%;
     }
   }
+
+  /* Portofolio */
