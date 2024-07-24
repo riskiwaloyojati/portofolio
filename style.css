@@ -236,21 +236,21 @@ ul.navbar {
     transition: 0.5s;
     
   }
-  .card:hover {
+  .services-card:hover {
     background-position: 0 100%;
   }
-  .card:hover .icon-wrapper {
+  .services-card:hover .icon-wrapper {
     background-color: #ffffff;
     color: #575757;
   }
-  .card:hover h3 {
+  .services-card:hover h3 {
     color: #ffffff;
   }
-  .card:hover p {
+  .services-card:hover p {
     color: #f0f0f0;
   }
   @media screen and (min-width: 768px) {
-    section {
+    .services-section {
       padding: 0 2em;
     }
     .services-column {
@@ -259,7 +259,7 @@ ul.navbar {
     }
   }
   @media screen and (min-width: 992px) {
-    section {
+    .services-section {
       padding: 1em 3em;
     }
     .services-column {
@@ -269,3 +269,29 @@ ul.navbar {
   }
 
 /* Portofolio */
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img:not(:first-child) {
+  margin-left: -100%;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.carousel img:first-child {
+  animation: slide 5s infinite alternate;
+}

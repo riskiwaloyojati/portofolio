@@ -8,13 +8,91 @@
 </head>
 <body>
 
-<div class="container">
-  <div class="row">
-    <div class="photo">Foto</div>
-    <div class="text1">Teks 1</div>
-  </div>
-  <div class="text2">Teks 2</div>
-</div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Image Carousel</title>
+      <style>
+          .carousel-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+          }
+          .carousel {
+              display: flex;
+              align-items: center;
+          }
+          .carousel-item {
+              transition: all 0.3s ease;
+          }
+          .carousel-item.active {
+              width: 400px;
+              height: 300px;
+          }
+          .carousel-item:not(.active) {
+              width: 200px;
+              height: 150px;
+              opacity: 0.7;
+          }
+          .carousel-item img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+          }
+          .carousel-button {
+              background: none;
+              border: none;
+              font-size: 24px;
+              cursor: pointer;
+              padding: 0 20px;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="carousel-container">
+          <button class="carousel-button" id="prevBtn">&lt;</button>
+          <div class="carousel">
+              <div class="carousel-item"><img src="https://via.placeholder.com/400x300?text=Image+1" alt="Image 1"></div>
+              <div class="carousel-item active"><img src="https://via.placeholder.com/400x300?text=Image+2" alt="Image 2"></div>
+              <div class="carousel-item"><img src="https://via.placeholder.com/400x300?text=Image+3" alt="Image 3"></div>
+          </div>
+          <button class="carousel-button" id="nextBtn">&gt;</button>
+      </div>
+  
+      <script>
+          const carousel = document.querySelector('.carousel');
+          const items = carousel.querySelectorAll('.carousel-item');
+          const prevBtn = document.getElementById('prevBtn');
+          const nextBtn = document.getElementById('nextBtn');
+          let currentIndex = 1;
+  
+          function updateCarousel() {
+              items.forEach((item, index) => {
+                  item.classList.remove('active');
+                  if (index === currentIndex) {
+                      item.classList.add('active');
+                  }
+              });
+          }
+  
+          function moveNext() {
+              currentIndex = (currentIndex + 1) % items.length;
+              updateCarousel();
+          }
+  
+          function movePrev() {
+              currentIndex = (currentIndex - 1 + items.length) % items.length;
+              updateCarousel();
+          }
+  
+          nextBtn.addEventListener('click', moveNext);
+          prevBtn.addEventListener('click', movePrev);
+      </script>
+  </body>
+  </html>
 
 </body>
 </html>
