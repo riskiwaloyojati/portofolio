@@ -295,3 +295,8 @@ ul.navbar {
 .carousel img:first-child {
   animation: slide 5s infinite alternate;
 }
+
+swiper {
+  width: 600px;
+  height: 300px;
+}
