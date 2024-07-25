@@ -1,58 +1,73 @@
-body {
+#portofolio {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  background-color: #212121;
-  margin: 0;
-  padding: 0;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .swiper-container {
   width: 100%;
+  max-width: 1200px; /* Sesuaikan sesuai kebutuhan */
+  margin: auto;
+  background-color: red;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-position: center;
   background-size: cover;
-  width: 320px;
-  background-color: #fff;
+  width: 300px;
+  height: 300px;
+  background-color: red;
   overflow: hidden;
-  border-radius: 8px;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+.swiper-slide.center-slide {
+  transform: scale(1.2);
+  width: 400px !important; /* Sesuaikan ukuran */
+  height: 400px !important; /* Sesuaikan ukuran */
 }
 
 .picture {
+  margin: auto;
   width: 320px;
   height: 320px;
   overflow: hidden;
-  
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+}
+
+.picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .detail {
-  padding: 25px 20px;
+  background-color: black;
+  padding: 2px 2px;
   font-weight: 600;
   text-align: center;
-  
-  h3 {
-    margin: 0;
-    font-size: 20px;
-  }
-  
-  span {
-    display: block;
-    font-size: 16px;
-    color: #f44336;
-  }
+}
+
+.detail h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.detail span {
+  display: block;
+  font-size: 16px;
+  color: #f44336;
 }

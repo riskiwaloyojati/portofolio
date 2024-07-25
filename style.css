@@ -268,7 +268,7 @@ ul.navbar {
   }
 
 /* Portofolio */
-#portofolio{
+/* #portofolio{
   margin : auto;
   
 }
@@ -281,7 +281,7 @@ ul.navbar {
   background-color : red ;
   padding-top: 50px;
   padding-bottom: 50px;
-  flex-wrap : wrap;
+
 }
 
 .swiper-slide {
@@ -323,4 +323,72 @@ ul.navbar {
     font-size: 16px;
     color: #f44336;
   }
+} */
+#portofolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  background-color : gray ;
+  max-width: auto; /* Sesuaikan sesuai kebutuhan */
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  max-width: 600px; /* Sesuaikan sesuai kebutuhan */
+  max-height: 400px;
+  background-color: white;
+  margin : auto ;
+  overflow: hidden;
+}
+
+.picture {
+  margin: auto;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.picture img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail {
+  background-color: black;
+  padding: 2px 2px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.detail h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.detail span {
+  display: block;
+  font-size: 16px;
+  color: #f44336;
 }

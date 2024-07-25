@@ -1,213 +1,189 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Riski Waloyojati</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  </head>
-  <body>
-    <!-- Foto slide landing page -->
-    <div class="homepage">
-      <!-- welcome -->
-      <div class="homepage-text">
-        <h1 class="homepage-text-wellcome">Halo! Selamat Datang</h1>
-      </div>
 
-      <!-- dot / circle -->
-      <div class="dots">
-        <div class="landingpage-dot">
-          <span
-            class="landingpage-dot-position"
-            onclick="currentSlide(1)"
-          ></span>
-          <span
-            class="landingpage-dot-position"
-            onclick="currentSlide(2)"
-          ></span>
-          <span
-            class="landingpage-dot-position"
-            onclick="currentSlide(3)"
-          ></span>
-        </div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riski Waloyojati</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
 
-      <!-- image slide -->
-      <div id="landingpage">
-        <div class="landingpage-slide fade">
-          <div class="landingpage-slide-number">1 / 3</div>
-          <img
-            src="assets/myfoto/riski2.JPG"
-            alt="myfoto.jpg"
-            class="img-slide"
-          />
-        </div>
-        <div class="landingpage-slide fade">
-          <div class="landingpage-slide-number">2 / 3</div>
-          <img
-            src="assets/myfoto/bromo.JPG"
-            alt="myfoto.jpg"
-            class="img-slide"
-          />
-        </div>
-        <div class="landingpage-slide fade">
-          <div class="landingpage-slide-number">3 / 3</div>
-          <img
-            src="assets/myfoto/bromo1.jpg"
-            alt="myfoto.jpg"
-            class="img-slide"
-          />
-        </div>
+<body>
+  <!-- Foto slide landing page -->
+  <div class="homepage">
+    <!-- welcome -->
+    <div class="homepage-text">
+      <h1 class="homepage-text-wellcome">Halo! Selamat Datang</h1>
+    </div>
 
-        <!-- next & previus button -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- dot / circle -->
+    <div class="dots">
+      <div class="landingpage-dot">
+        <span class="landingpage-dot-position" onclick="currentSlide(1)"></span>
+        <span class="landingpage-dot-position" onclick="currentSlide(2)"></span>
+        <span class="landingpage-dot-position" onclick="currentSlide(3)"></span>
       </div>
     </div>
 
-    <!-- navbar -->
-    <div class="nav">
-      <ul class="navbar">
-        <li><a href="#aboutme">About me</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portofolio">Portofolio</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+    <!-- image slide -->
+    <div id="landingpage">
+      <div class="landingpage-slide fade">
+        <div class="landingpage-slide-number">1 / 3</div>
+        <img src="assets/myfoto/riski2.JPG" alt="myfoto.jpg" class="img-slide" />
+      </div>
+      <div class="landingpage-slide fade">
+        <div class="landingpage-slide-number">2 / 3</div>
+        <img src="assets/myfoto/bromo.JPG" alt="myfoto.jpg" class="img-slide" />
+      </div>
+      <div class="landingpage-slide fade">
+        <div class="landingpage-slide-number">3 / 3</div>
+        <img src="assets/myfoto/bromo1.jpg" alt="myfoto.jpg" class="img-slide" />
+      </div>
+
+      <!-- next & previus button -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <div class="nav">
+    <ul class="navbar">
+      <li><a href="#aboutme">About me</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portofolio">Portofolio</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Aboutme -->
+  <div id="aboutme">
+    <br />
+    <div class="aboutme-title" id="aboutme-title">
+      <h1 class="aboutme-title-text">About Me</h1>
     </div>
 
-    <!-- Aboutme -->
-    <div id="aboutme">
-      <br />
-      <div class="aboutme-title" id="aboutme-title">
-        <h1 class="aboutme-title-text">About Me</h1>
+    <div class="aboutme-col">
+      <div class="aboutme-col1">
+        <img src="assets/myfoto/riski3.jpg" alt="" class="aboutme-col1-img" />
       </div>
-
-      <div class="aboutme-col">
-        <div class="aboutme-col1">
-          <img src="assets/myfoto/riski3.jpg" alt="" class="aboutme-col1-img" />
-        </div>
-        <div class="aboutme-col2">
-          <h2>Hy Riski Disini</h2>
-          <p class="aboutme-col2-p">
-            Kenalin, namaku <b>Riski Waloyojati</b>. Aku seorang
-            <b>Web Developer</b> yang selalu siap buat ngoding sampai subuh,
-            nge-debug sampai mata merah, dan bikin website yang gak cuma keren,
-            tapi juga fungsional! <b>Sedikit Cerita</b> Tentang Aku Dulu, Aku
-            cuma anak biasa yang suka main game dan otak-atik komputer. Tapi,
-            siapa sangka hobi itu bisa bikin aku jadi jago ngoding dan bikin
-            website. <b>Sekarang</b> aku udah bisa bikin website dari yang
-            simpel sampai yang ribet. Aku <b>suka tantangan</b> dan selalu
-            pengen belajar hal baru di dunia teknologi.
-          </p>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-
-    <!-- Services -->
-    <div id="services">
-      <div class="services-title" id="services-title">
-        <h1 class="services-title-text">Services</h1>
-      </div>
-
-      <div class="services-section">
-        <div class="services-row">
-          <div class="services-column">
-            <div class="services-card">
-              <div class="services-icon-wrapper">
-                <i class="services-fas services-fa-hammer"></i>
-              </div>
-              <h3>Web Development</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="services-column">
-            <div class="services-card">
-              <div class="services-icon-wrapper">
-                <i class="fas fa-brush"></i>
-              </div>
-              <h3>Web Design</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="services-column">
-            <div class="services-card">
-              <div class="services-icon-wrapper">
-                <i class="fas fa-wrench"></i>
-              </div>
-              <h3>Service Heading</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="services-column">
-            <div class="services-card">
-              <div class="services-icon-wrapper">
-                <i class="fas fa-truck-pickup"></i>
-              </div>
-              <h3>Service Heading</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="services-column">
-            <div class="services-card">
-              <div class="services-icon-wrapper">
-                <i class="fas fa-broom"></i>
-              </div>
-              <h3>Service Heading</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-          <div class="services-column">
-            <div class="services-card">
-              <div class="services-icon-wrapper">
-                <i class="fas fa-plug"></i>
-              </div>
-              <h3>Service Heading</h3>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quisquam consequatur necessitatibus eaque.
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="aboutme-col2">
+        <h2>Hy Riski Disini</h2>
+        <p class="aboutme-col2-p">
+          Kenalin, namaku <b>Riski Waloyojati</b>. Aku seorang
+          <b>Web Developer</b> yang selalu siap buat ngoding sampai subuh,
+          nge-debug sampai mata merah, dan bikin website yang gak cuma keren,
+          tapi juga fungsional! <b>Sedikit Cerita</b> Tentang Aku Dulu, Aku
+          cuma anak biasa yang suka main game dan otak-atik komputer. Tapi,
+          siapa sangka hobi itu bisa bikin aku jadi jago ngoding dan bikin
+          website. <b>Sekarang</b> aku udah bisa bikin website dari yang
+          simpel sampai yang ribet. Aku <b>suka tantangan</b> dan selalu
+          pengen belajar hal baru di dunia teknologi.
+        </p>
       </div>
       <div class="clear"></div>
+    </div>
+  </div>
 
-      <!-- Portofolio -->
-        <div id="portofolio">
-          <div class="services-title" id="services-title">
-            <h1 class="services-title-text">Portofolio</h1>
+  <!-- Services -->
+  <div id="services">
+    <div class="services-title" id="services-title">
+      <h1 class="services-title-text">Services</h1>
+    </div>
+
+    <div class="services-section">
+      <div class="services-row">
+        <div class="services-column">
+          <div class="services-card">
+            <div class="services-icon-wrapper">
+              <i class="services-fas services-fa-hammer"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quisquam consequatur necessitatibus eaque.
+            </p>
           </div>
-          
+        </div>
+        <div class="services-column">
+          <div class="services-card">
+            <div class="services-icon-wrapper">
+              <i class="fas fa-brush"></i>
+            </div>
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quisquam consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="services-column">
+          <div class="services-card">
+            <div class="services-icon-wrapper">
+              <i class="fas fa-wrench"></i>
+            </div>
+            <h3>Service Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quisquam consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="services-column">
+          <div class="services-card">
+            <div class="services-icon-wrapper">
+              <i class="fas fa-truck-pickup"></i>
+            </div>
+            <h3>Service Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quisquam consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="services-column">
+          <div class="services-card">
+            <div class="services-icon-wrapper">
+              <i class="fas fa-broom"></i>
+            </div>
+            <h3>Service Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quisquam consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="services-column">
+          <div class="services-card">
+            <div class="services-icon-wrapper">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>Service Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Quisquam consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="clear"></div>
 
-          <!-- Slider main container -->
+    <!-- Portofolio -->
+    <!-- <div id="portofolio">
+      <div class="services-title" id="services-title">
+        <h1 class="services-title-text">Portofolio</h1>
+      </div>
       <div class="swiper-container">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-          <!-- Slides -->
           <div class="swiper-slide">
             <div class="picture">
               <img
                 src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80"
-                alt=""
-              />
+                alt="" />
             </div>
             <div class="detail">
               <h3>Marie Edwards</h3>
@@ -218,8 +194,7 @@
             <div class="picture">
               <img
                 src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49899e285952107fdfd9415b8d3bf74a&auto=format&fit=crop&w=634&q=80"
-                alt=""
-              />
+                alt="" />
             </div>
             <div class="detail">
               <h3>Kelly Woods</h3>
@@ -230,8 +205,7 @@
             <div class="picture">
               <img
                 src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&s=739aef35459daa8aaeaa55363d492bc1&auto=format&fit=crop&w=673&q=80"
-                alt=""
-              />
+                alt="" />
             </div>
             <div class="detail">
               <h3>Roger Rice</h3>
@@ -242,22 +216,85 @@
             <div class="picture">
               <img
                 src="https://images.unsplash.com/photo-1502768040783-423da5fd5fa0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c6416353c255d2746a68c8a83943bdf&auto=format&fit=crop&w=634&q=80"
-                alt=""
-              />
+                alt="" />
             </div>
             <div class="detail">
               <h3>Jessica Garcia</h3>
               <span>Web Designer</span>
             </div>
           </div>
-
-
         </div>
-      
-          
-        
-   
+      </div>
+    </div> -->
+    <div id="portofolio">
+      <div class="services-title" id="services-title">
+        <h1 class="services-title-text">Portofolio</h1>
+      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="picture">
+              <img src="https://images.unsplash.com/photo-1464863979621-258859e62245?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6b4e41a670c097c8fd2834579f5d5958&auto=format&fit=crop&w=633&q=80" alt="" />
+            </div>
+            <div class="detail">
+              <h3>Marie Edwards</h3>
+              <span>Web Designer</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="picture">
+              <img src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49899e285952107fdfd9415b8d3bf74a&auto=format&fit=crop&w=634&q=80" alt="" />
+            </div>
+            <div class="detail">
+              <h3>Kelly Woods</h3>
+              <span>Web Designer</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="picture">
+              <img src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&s=739aef35459daa8aaeaa55363d492bc1&auto=format&fit=crop&w=673&q=80" alt="" />
+            </div>
+            <div class="detail">
+              <h3>Roger Rice</h3>
+              <span>Web Designer</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="picture">
+              <img src="https://images.unsplash.com/photo-1502768040783-423da5fd5fa0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c6416353c255d2746a68c8a83943bdf&auto=format&fit=crop&w=634&q=80" alt="" />
+            </div>
+            <div class="detail">
+              <h3>Jessica Garcia</h3>
+              <span>Web Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+
+
+
+
+
+
+
+
+    <!-- spasing -->
+    <div>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, nostrum.</p>
+      <br><br><br><br>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, nostrum.</p>
+      <br><br><br><br>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, nostrum.</p>
+      <br><br><br><br>
+    </div>
+    
+
+
+
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

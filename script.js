@@ -33,8 +33,10 @@ var swiper = new Swiper(".swiper-container", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  loop: true,
+  // loopSlides: 4, // Menambahkan slide tambahan untuk mendukung looping
   coverflowEffect: {
-    rotate: 20,
+    rotate: 0,
     stretch: 0,
     depth: 350,
     modifier: 1,
@@ -42,5 +44,20 @@ var swiper = new Swiper(".swiper-container", {
   },
   pagination: {
     el: ".swiper-pagination"
+
   }
 });
+
+// var swiper = new Swiper('.swiper-container', {
+//   slidesPerView: 3,
+//   spaceBetween: 30,
+//   centeredSlides: true,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     clickable: true,
+//   },
+// });
