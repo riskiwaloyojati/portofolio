@@ -1,7 +1,6 @@
-html, body{
+body{
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
 }
 *{
     font-family: 'Segoe UI',  sans-serif;
@@ -269,36 +268,33 @@ ul.navbar {
   }
 
 /* Portofolio */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  background-color: #212121;
-  margin: 0;
-  padding: 0;
+#portofolio{
+  margin : auto;
+  
 }
 
 .swiper-container {
   width: 100%;
+  max-height : 500px;
+  max-width : 1400px;
+  margin : auto ;
+  background-color : red ;
   padding-top: 50px;
   padding-bottom: 50px;
+  flex-wrap : wrap;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 320px;
-  background-color: #fff;
+  max-width: 500px;
+  max-height : 400px ;
+  background-color: red ;
   overflow: hidden;
-  border-radius: 8px;
 }
 
 .picture {
+  margin : auto;
   width: 320px;
   height: 320px;
   overflow: hidden;
@@ -312,7 +308,8 @@ body {
 }
 
 .detail {
-  padding: 25px 20px;
+  background-color: black ;
+  padding: 2px 2px;
   font-weight: 600;
   text-align: center;
   
