@@ -1,24 +1,16 @@
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
-  spaceBetween: 30,
+var TrandingSlider = new Swiper('.tranding-slider', {
+  effect: 'coverflow',
+  grabCursor: true,
   centeredSlides: true,
   loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
   },
-  on: {
-    slideChange: function () {
-      updateSlideSizes(swiper);
-    },
-    init: function () {
-      updateSlideSizes(swiper);
-    },
+  pagination: {
+    el: '.swiper-pagination',
   },
 });
-
-function updateSlideSizes(swiper) {
-  swiper.slides.removeClass('center-slide');
-  var centerIndex = swiper.activeIndex + Math.floor(swiper.params.slidesPerView / 2);
-  $(swiper.slides[centerIndex]).addClass('center-slide');
-}

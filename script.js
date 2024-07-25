@@ -28,36 +28,19 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-var swiper = new Swiper(".swiper-container", {
-  effect: "coverflow",
+var TrandingSlider = new Swiper('.tranding-slider', {
+  effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: "auto",
   loop: true,
-  // loopSlides: 4, // Menambahkan slide tambahan untuk mendukung looping
+  slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 350,
-    modifier: 1,
-    slideShadows: true
+    depth: 100,
+    modifier: 2.5,
   },
   pagination: {
-    el: ".swiper-pagination"
-
-  }
+    el: '.swiper-pagination',
+  },
 });
-
-// var swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   centeredSlides: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-// });
